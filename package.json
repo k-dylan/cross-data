@@ -1,0 +1,32 @@
+{
+  "name": "cross-data",
+  "version": "1.0.1",
+  "description": "跨域数据共享方案",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-dylan/cross-data.git"
+  },
+  "keywords": [
+    "cross"
+  ],
+  "author": "kdylan <kdylan@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k-dylan/cross-data/issues"
+  },
+  "homepage": "https://github.com/k-dylan/cross-data#readme",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "rollup": "^1.11.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
