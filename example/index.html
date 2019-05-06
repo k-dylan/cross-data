@@ -13,11 +13,12 @@
     <script src="../dist/client.js"></script>
     <script>
         const crossData = new Client({
-            iframeUrl: 'http://localhost:8080/example/iframe.html'
+            iframeUrl: 'http://localhost:8080/example/hub.html'
         })
 
         crossData.get('num').then(function (num) {
             num = num || 1;
+            console.log(num)
             return crossData.set('num', ++num)
         }).then(console.log)
     </script>

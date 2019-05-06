@@ -4,7 +4,7 @@
  * @Author: kdylan
  * @Date: 2019-05-05 11:19:43
  * @Last Modified by: kdylan
- * @Last Modified time: 2019-05-05 19:11:20
+ * @Last Modified time: 2019-05-06 09:23:21
  */
 
 export default class Client {
@@ -17,14 +17,8 @@ export default class Client {
         this._pid = 0; 
 
         window.addEventListener('message', event => {
-            let data = event.data;
-            if (typeof data !== 'object') {
-                try {
-                    data = JSON.parse(event.data);
-                } catch (err) { retrun }
-            }
-            if (typeof data.pid === 'undefined') return;
-            //TODO: 添加域名验证
+            if(event.origin !== this._iframeOrigin) return ;
+            let data = JSON.parse(event.data);
             if (data.err) {
                 this._promiseCb[data.pid].reject(data.error);
             } else {

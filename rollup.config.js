@@ -14,7 +14,7 @@ const setConfig = function (opts) {
             babel({
                 exclude: 'node_modules/**' 
             }),
-            // uglify()
+            uglify()
         ]
     }
 }

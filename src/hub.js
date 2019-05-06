@@ -4,7 +4,7 @@
  * @Author: kdylan
  * @Date: 2019-05-05 11:21:29
  * @Last Modified by: kdylan
- * @Last Modified time: 2019-05-05 18:55:02
+ * @Last Modified time: 2019-05-06 09:35:05
  */
 
 export default class Hub {
